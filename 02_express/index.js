@@ -1,7 +1,8 @@
 import express from 'express';
+import 'dotenv/config';
 
+const port = process.env.PORT || 3000;
 const app = express();
-const port = 3000;
 const link = '127.0.0.1';
 
 app.use(express.json());
